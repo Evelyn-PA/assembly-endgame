@@ -2,7 +2,7 @@ import Header from "./Components/Header"
 import Tags from "./Components/Tags"
 import Keyboard from "./Components/KeyBoard"
 import "./App.css"
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from "@vercel/analytics/react"
 import { useState } from "react"
 
 
