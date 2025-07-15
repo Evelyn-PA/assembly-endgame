@@ -10,7 +10,7 @@ I built this project as part of my self‑study journey to sharpen my React, Jav
 
 ![Screenshot of Assembly Endgame](/src/assets/Assembly-game.png)
 
-**👉 [Live Demo](https://assembly-endgame-pearl-psi.vercel.app/){:target="_blank"}**
+👉 <a href="https://assembly-endgame-pearl-psi.vercel.app/" target="_blank">Live Demo</a>
 
 ## 💡 Motivation
 As a student web developer passionate about creating interactive applications, I built this game to:
