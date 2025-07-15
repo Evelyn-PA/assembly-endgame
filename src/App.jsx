@@ -4,12 +4,17 @@ import Keyboard from "./Components/KeyBoard"
 import "./App.css"
 import { Analytics } from "@vercel/analytics/react"
 import { useState } from "react"
+import {word} from "./word"
 
 
 
 export default function App() {
 
-  const [words, setWords] = useState("Javascript")
+  const getRandomWord = ()=>{
+    return word[Math.floor(Math.random()*word.length)]
+  }
+
+  const [words, setWords] = useState(getRandomWord)
 
   const [userGuess, setUserGuess] = useState([])
 
@@ -26,6 +31,7 @@ export default function App() {
   const [guessTime, setGuesstime] = useState(8)
 
   function startNewGame() {
+    setWords(getRandomWord)
     setUserGuess([])
     setGuesstime(8)
     setWrongGuesses(new Array(8).fill(false))
