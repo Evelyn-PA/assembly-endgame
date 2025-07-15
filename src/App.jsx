@@ -2,9 +2,9 @@ import Header from "./Components/Header"
 import Tags from "./Components/Tags"
 import Keyboard from "./Components/KeyBoard"
 import "./App.css"
-
+import { Analytics } from "@vercel/analytics/next"
 import { useState } from "react"
-import { useEffect } from "react"
+
 
 
 export default function App() {
@@ -88,6 +88,8 @@ export default function App() {
         startNewGame={startNewGame}
         isGameOver={isGameOver}
       />
+
+      <Analytics />
     </div>
 
 
