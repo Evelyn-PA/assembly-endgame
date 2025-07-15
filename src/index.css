@@ -1,0 +1,35 @@
+body{
+    background-color: #282726;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+main{
+    color: #f9f4da;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    text-align: center;
+}
+
+header p{
+    color: #8e8e8e;
+}
+
+.game-status{
+    text-align: center;
+    width: 15rem;
+    border: none;
+    border-radius: 15px;
+    padding: auto;
+    margin: 1rem 4rem;
+    background-color: #10A95B;
+}
+
+.game-status h2{
+    margin-bottom: -5px;
+}
+

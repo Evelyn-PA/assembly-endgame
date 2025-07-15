@@ -1,0 +1,119 @@
+.game-status.win {
+    background-color: #10A95B;
+}
+
+.game-status.lose {
+    background-color: #D02B2B;
+}
+
+.tags-container {
+    height: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-top: 2rem;
+    justify-content: center;
+}
+
+.tags {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 4px;
+    font-weight: bold;
+    border-radius: 4px;
+    overflow: hidden;
+    font-weight: bold;
+}
+
+
+.tag-icon {
+    position: absolute;
+    font-size: 20px;
+    transform: translate(-50%, -50%);
+}
+
+.tags.tag-wrong::before {
+    content: "💀";
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.words {
+    display: flex;
+    color: #f9f4da;
+    justify-content: center;
+    gap: 4px;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+}
+
+section.words>span {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #323232;
+    border-bottom: 1px solid rgb(231, 231, 231);
+}
+
+.keyboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+    max-width: 42rem;
+    margin: 3rem auto;
+}
+
+.keyb-btn {
+    background-color: #F4EB13;
+    width: 3rem;
+    height: 3rem;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-weight: 550;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.keyb-btn.correct {
+    background-color: #10A95B
+}
+
+.keyb-btn.wrong {
+    background-color: #D02B2B;
+}
+
+.keyb-btn:hover {
+    background-color: #b6b6b6;
+}
+
+.keyboard-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.new-game-btn {
+    background-color: #298EC6;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #F9F4D9;
+    font-family: 'Courier New', Courier, monospace;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 10rem;
+    height: 3rem;
+    align-items: center;
+    align-self: center;
+}
